@@ -6,7 +6,7 @@ import os
 
 
 def generate_launch_description():
-    path2_pkg = 'ucsd_robocar_path2_pkg'
+    path_pkg = 'path_pkg'
     param_file_name = 'path_provider.yaml'
     path_file_name = 'path_from_odom.csv'
     node_name = 'path_provider_node'
@@ -14,17 +14,17 @@ def generate_launch_description():
     ld = LaunchDescription()
 
     param_file = os.path.join(
-        get_package_share_directory(path2_pkg),
+        get_package_share_directory(path_pkg),
         'param',
         param_file_name)
 
     path_file = os.path.join(
-        get_package_share_directory(path2_pkg), 
+        get_package_share_directory(path_pkg), 
         'paths', 
         path_file_name)
 
     path_node = Node(
-        package=path2_pkg,
+        package=path_pkg,
         executable=node_name,
         output='screen',
         parameters=[param_file, {"csv_path": path_file}],

@@ -2,7 +2,7 @@ from setuptools import setup
 import os
 from glob import glob
 
-package_name = 'ucsd_robocar_path2_pkg'
+package_name = 'path_pkg'
 
 setup(
     name=package_name,
@@ -26,8 +26,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'path_provider_node = ucsd_robocar_path2_pkg.path_provider_node:main',
-            'tube_follower_node = ucsd_robocar_path2_pkg.tube_follower_node:main'
+            'path_provider_node = path_pkg.path_provider_node:main',
+            'tube_follower_node = path_pkg.tube_follower_node:main'
         ],
     },
 )

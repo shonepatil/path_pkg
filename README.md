@@ -1,4 +1,4 @@
-# ucsd_robocar_path2_pkg 
+# path_pkg 
 
 <img src="ucsd_ros2_logos.png">
 

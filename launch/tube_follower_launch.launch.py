@@ -11,7 +11,7 @@ import yaml
 
 
 def generate_launch_description():
-    node_package = 'ucsd_robocar_path2_pkg'
+    node_package = 'path_pkg'
     config_file = 'tube_follower.yaml'
     node_name = 'tube_follower_node'
 
