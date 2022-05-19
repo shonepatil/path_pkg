@@ -1,4 +1,4 @@
 /**:
   ros__parameters:
-    timer: 0.05
+    timer: 0.005
     frame_id: "map"
